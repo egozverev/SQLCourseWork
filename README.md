@@ -1,2 +1,2 @@
 # SQLCourseWork
-MIPT 2sem Couse Work
+MIPT 2sem Course Work
