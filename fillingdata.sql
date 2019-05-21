@@ -3,15 +3,15 @@ set search_path TO coursework, public;
 
 
 
-insert into magazine(magazine_id, article_nm, magazine_address_txt, magazine_site_url, magazine_email_txt, magazine_phone_no, magazine_owner_nm)
+insert into magazine(magazine_id, magazine_nm, magazine_address_txt, magazine_site_url, magazine_email_txt, magazine_phone_no, magazine_owner_nm)
 values (0, 'Horns && Hooves', 'London, 34-th street, 12', 'www.hornsandhooves.com', 'horns@hooves.com', '+3-43-988-7732', 'Mister Bychara');
-insert into magazine(magazine_id, article_nm, magazine_address_txt, magazine_site_url, magazine_email_txt, magazine_phone_no, magazine_owner_nm)
+insert into magazine(magazine_id, magazine_nm, magazine_address_txt, magazine_site_url, magazine_email_txt, magazine_phone_no, magazine_owner_nm)
 values (1, 'Cosmo Chronicles', 'London, 34-th street, 13', 'www.cchonicles.com', 'cchronicles@gmail.com', '+3-23-768-7733', 'Mister Bychara Mladshiy');
-insert into magazine(magazine_id, article_nm, magazine_address_txt, magazine_site_url, magazine_email_txt, magazine_phone_no, magazine_owner_nm)
+insert into magazine(magazine_id, magazine_nm, magazine_address_txt, magazine_site_url, magazine_email_txt, magazine_phone_no, magazine_owner_nm)
 values (2, 'Physicist Solving A City', 'France, De jour prospect, 345/2', null, 'info@psac.com', '+32-389447221', 'Augustin Louis Cauchy');
-insert into magazine(magazine_id, article_nm, magazine_address_txt, magazine_site_url, magazine_email_txt, magazine_phone_no, magazine_owner_nm)
+insert into magazine(magazine_id, magazine_nm, magazine_address_txt, magazine_site_url, magazine_email_txt, magazine_phone_no, magazine_owner_nm)
 values (3, 'Theocracy Records', 'Italy, Rome, 13-st street, 13,', null, 'trecords@gmail.com', '+98-345-6677-23', 'Jorge Mario Bergoglio');
-insert into magazine(magazine_id, article_nm, magazine_address_txt, magazine_site_url, magazine_email_txt, magazine_phone_no, magazine_owner_nm)
+insert into magazine(magazine_id, magazine_nm, magazine_address_txt, magazine_site_url, magazine_email_txt, magazine_phone_no, magazine_owner_nm)
 values (4, 'Goddamn Theories', null, 'www.godtheories.th', 'godtheories@gmail.com', null, null);
 
 insert into person(person_id, person_nm, person_age_num, person_phone_no, person_email_txt, person_reviewer_flg, person_author_flg)

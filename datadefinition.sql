@@ -33,7 +33,7 @@ create table article(
 
 create table magazine(
   magazine_id INT PRIMARY KEY ,
-  article_nm VARCHAR(50) NOT NULL,
+  magazine_nm VARCHAR(50) NOT NULL,
   magazine_address_txt VARCHAR(100)  ,
   magazine_site_url VARCHAR(50) UNIQUE,
   magazine_email_txt VARCHAR(50),
