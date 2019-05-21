@@ -2,20 +2,20 @@ DROP SCHEMA IF EXISTS coursework CASCADE;
 CREATE SCHEMA coursework;
 set search_path TO coursework, public;
 
-drop table if exists article_x_author;
-drop table if exists article_x_magazine;
-drop table if exists reviewer_x_magazine;
-drop table if exists article_x_reviewer;
-drop table if exists author_person;
-drop table if exists person;
-drop table if exists article;
-drop table if exists institute;
-drop table if exists magazine;
+drop table if exists article_x_author cascade ;
+drop table if exists article_x_magazine cascade ;
+drop table if exists reviewer_x_magazine cascade ;
+drop table if exists article_x_reviewer cascade ;
+drop table if exists author_person cascade ;
+drop table if exists person cascade ;
+drop table if exists article cascade ;
+drop table if exists institute cascade ;
+drop table if exists magazine cascade ;
 
 create table person(
   person_id INT PRIMARY KEY,
   person_nm VARCHAR(50) NOT NULL,
-  person_age INT CHECK ( person_age >=0 ),
+  person_age_num INT CHECK ( person_age_num >=0 ),
   person_phone_no VARCHAR(20) CHECK(person_phone_no ~ '([-():=+]?\d[-():=+]?){10}'),
   person_email_txt VARCHAR(50) UNIQUE ,
   person_reviewer_flg boolean,
