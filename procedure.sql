@@ -6,10 +6,6 @@ create or replace function get_avg_of_number_of_pages_by_sum_pages_num(people_nu
   end;
   $$ language plpgsql;
 
-
-
-
-
 create or replace function get_avg_num_of_pages() returns numeric as $$
   with authors as(
     select distinct person_id
@@ -22,4 +18,4 @@ create or replace function get_avg_num_of_pages() returns numeric as $$
     from article
   ) select * from get_avg_of_number_of_pages_by_sum_pages_num(cast((select cnt from authors_number) as numeric), (select cnt from article_number));
   $$ language sql;
-select * from get_avg_of_number_of_pages();
+select * from get_avg_num_of_pages();
